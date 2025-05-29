@@ -22,36 +22,24 @@ header {
 header h1 {
   color: #054d61;
   font-size: 2em;
-  
 }
 .glow {
   color: #ffffff;
   text-align: center;
   font-size: 2.5em;
-  text-shadow:
-    0 0 5px #ff0055,
-    0 0 10px #ff0055,
-    0 0 20px #ff0055,
-    0 0 40px #ff0055,
-    0 0 60px #ff0055;
+  text-shadow: 0 0 5px #ff0055, 0 0 10px #ff0055, 0 0 20px #ff0055,
+    0 0 40px #ff0055, 0 0 60px #ff0055;
   animation: glowPulse 2s ease-in-out infinite;
 }
 @keyframes glowPulse {
-  0%, 100% {
-    text-shadow:
-      0 0 5px #ff0055,
-      0 0 10px #ff0055,
-      0 0 20px #ff0055,
-      0 0 40px #ff0055,
-      0 0 60px #ff0055;
+  0%,
+  100% {
+    text-shadow: 0 0 5px #ff0055, 0 0 10px #ff0055, 0 0 20px #ff0055,
+      0 0 40px #ff0055, 0 0 60px #ff0055;
   }
   50% {
-    text-shadow:
-      0 0 2px #ff0055,
-      0 0 4px #ff0055,
-      0 0 8px #ff0055,
-      0 0 10px #ff0055,
-      0 0 12px #ff0055;
+    text-shadow: 0 0 2px #ff0055, 0 0 4px #ff0055, 0 0 8px #ff0055,
+      0 0 10px #ff0055, 0 0 12px #ff0055;
   }
 }
 
@@ -109,9 +97,6 @@ body::before {
   }
 }
 
-
-
-
 #menu {
   padding: 10px;
   text-align: center;
@@ -139,7 +124,6 @@ h2 {
   justify-content: center;
   gap: 35px;
   padding: 20px;
-  
 }
 
 .gallery img {
@@ -165,8 +149,7 @@ h2 {
   padding: 16px 24px;
   position: relative;
   border-radius: 8px;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.01);
-
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
 
   &::after {
     position: absolute;
@@ -194,7 +177,6 @@ h2 {
     background-size: 200% 200%;
     animation: animateGlow 2.25s linear infinite;
   }
-
 }
 
 h4 {
@@ -222,20 +204,23 @@ table {
   border-bottom: 1px solid #ddd;
 }
 
-.powerStatsTable thead, .powerStatsTable th,.powerStatsTable td {
+.powerStatsTable thead,
+.powerStatsTable th,
+.powerStatsTable td {
   background-color: #403f3f65;
   color: #fff;
   text-align: center;
   width: 160px;
   padding-inline: 10px;
 }
-table.powerStatsTable{
+table.powerStatsTable {
   margin: 0 auto;
   width: 70%;
   border-radius: 8px;
   overflow: hidden;
 }
-.powerStatsTable th,table.powerStatsTable td {
+.powerStatsTable th,
+table.powerStatsTable td {
   padding: 10px;
   background-color: #403f3f65;
   color: #fff;
@@ -300,8 +285,9 @@ footer {
   text-decoration: underline;
 }
 
-@keyframes pulseGlow {
-  0%, 100% {
+@keyframes pulseGlowBlue {
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(255, 0, 85, 0.4);
   }
   50% {
@@ -310,8 +296,14 @@ footer {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /***************** ABOUT PAGE STYLE ***********/
@@ -336,21 +328,18 @@ footer {
   line-height: 1.6;
 }
 
-.glow {
+.glow-blue {
   color: #ffffff;
   text-align: center;
   font-size: 2.5em;
-  text-shadow:
-    0 0 5px #00b7ff,
-    0 0 10px #00b7ff,
-    0 0 20px #00b7ff,
-    0 0 40px #00b7ff,
-    0 0 60px #00b7ff;
-  animation: glowPulse 2s ease-in-out infinite;
+  text-shadow: 0 0 5px #00b7ff, 0 0 10px #00b7ff, 0 0 20px #00b7ff,
+    0 0 40px #00b7ff, 0 0 60px #00b7ff;
+  animation: glowPulseBlue 2s ease-in-out infinite;
 }
 
-@keyframes pulseGlow {
-  0%, 100% {
+@keyframes pulseGlowBlue {
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(0, 183, 255, 0.4);
   }
   50% {
@@ -358,26 +347,25 @@ footer {
   }
 }
 
-@keyframes glowPulse {
-  0%, 100% {
-    text-shadow:
-      0 0 5px #00b7ff,
-      0 0 10px #00b7ff,
-      0 0 20px #00b7ff,
-      0 0 40px #00b7ff,
-      0 0 60px #00b7ff;
+@keyframes glowPulseBlue {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #00b7ff, 0 0 10px #00b7ff, 0 0 20px #00b7ff,
+      0 0 40px #00b7ff, 0 0 60px #00b7ff;
   }
   50% {
-    text-shadow:
-      0 0 2px #00b7ff,
-      0 0 4px #00b7ff,
-      0 0 8px #00b7ff,
-      0 0 10px #00b7ff,
-      0 0 12px #00b7ff;
+    text-shadow: 0 0 2px #00b7ff, 0 0 4px #00b7ff, 0 0 8px #00b7ff,
+      0 0 10px #00b7ff, 0 0 12px #00b7ff;
   }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
